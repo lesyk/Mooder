@@ -38,8 +38,8 @@ def get_results(text):
 
 def train_model(X, y):
     model = get_model()
-    # vect = CountVectorizer(max_df=0.7)
-    # model.fit(vect.fit_transform(X), y)
+    vect = CountVectorizer(max_df=0.7)
+    model.fit(vect.fit_transform(X), y)
     print("model trained")
 
 def init_model():
